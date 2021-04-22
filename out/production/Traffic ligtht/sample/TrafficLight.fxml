@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonBar?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+
+<AnchorPane fx:id="anchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMouseClicked="#isAnchorPane" onTouchMoved="#isAnchorPane" prefHeight="423.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <VBox layoutX="131.0" layoutY="2.0" prefHeight="342.0" prefWidth="344.0" />
+      <Rectangle fx:id="rectangle" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="330.0" layoutX="240.0" layoutY="4.0" onMouseMoved="#isRectangle" stroke="BLACK" strokeType="INSIDE" width="140.0" />
+      <Circle fx:id="circle1" fill="#f5f5f5" layoutX="310.0" layoutY="64.0" onMouseClicked="#isCircle1" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle2" fill="WHITE" layoutX="310.0" layoutY="173.0" onMouseClicked="#isCircle2" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+      <Circle fx:id="circle3" fill="WHITE" layoutX="310.0" layoutY="277.0" onMouseClicked="#isCircle3" radius="50.0" stroke="BLACK" strokeType="INSIDE" />
+      <ButtonBar fx:id="buttonBar" layoutX="154.0" layoutY="346.0" onInputMethodTextChanged="#isButtonBar" prefHeight="40.0" prefWidth="200.0">
+        <buttons>
+            <RadioButton fx:id="radioButton1" mnemonicParsing="false" onMouseClicked="#isRadiobutton1" text="Green" />
+            <RadioButton fx:id="radioButton2" mnemonicParsing="false" onMouseClicked="#isRadioButton2" text="Yellow" />
+            <RadioButton fx:id="radioButton3" mnemonicParsing="false" onMouseClicked="#isRadioButton3" text="Red" />
+        </buttons>
+      </ButtonBar>
+   </children>
+</AnchorPane>
